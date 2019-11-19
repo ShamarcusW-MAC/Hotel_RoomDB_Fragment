@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/name_insert_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:textColor="#9E0303"
+        android:text="Name: "
+        android:textSize="24sp"
+        android:fontFamily="@font/tradewinds_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/room_insert_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:textColor="#9E0303"
+        android:text="Room: "
+        android:textSize="24sp"
+        android:fontFamily="@font/tradewinds_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_insert_textview"
+        />
+
+    <TextView
+        android:id="@+id/price_insert_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:textColor="#9E0303"
+        android:text="Price: "
+        android:textSize="24sp"
+        android:fontFamily="@font/tradewinds_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/room_insert_textview"
+        />
+
+    <EditText
+        android:id="@+id/name_insert_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/gradient_list"
+        android:textColor="#FF0000"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@id/name_insert_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/name_insert_textview"
+        app:layout_constraintBottom_toBottomOf="@id/name_insert_textview"
+        />
+
+    <EditText
+        android:id="@+id/room_insert_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/gradient_list"
+        android:textColor="#FF0000"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@id/room_insert_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/room_insert_textview"
+        app:layout_constraintBottom_toBottomOf="@id/room_insert_textview"
+        />
+
+    <EditText
+        android:id="@+id/price_insert_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/gradient_list"
+        android:textColor="#FF0000"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@id/price_insert_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/price_insert_textview"
+        app:layout_constraintBottom_toBottomOf="@id/price_insert_textview"
+        />
+
+    <ImageView
+        android:id="@+id/fragment_imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/price_insert_textview"
+        app:layout_constraintBottom_toTopOf="@id/guest_insert_button"
+        />
+
+    <Button
+        android:id="@+id/guest_insert_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="#550101"
+        android:text="Add"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
